@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Inter:wght@400;500&display=swap');
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@plugin "@tailwindcss/typography";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-card-border: var(--card-border);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+
+  --font-sans: var(--app-font-sans);
+  --font-heading: 'Barlow Condensed', sans-serif;
+}
+
+:root {
+  --black: #0B0B0B;
+  --dark: #111111;
+  --card-bg: #161616;
+  --red: #E50914;
+  --red-glow: rgba(229, 9, 20, 0.25);
+  --white: #FFFFFF;
+  --grey: #888888;
+  --border-color: #222222;
+
+  --background: #0B0B0B;
+  --foreground: #FFFFFF;
+  --border: #222222;
+  --card: #161616;
+  --card-foreground: #FFFFFF;
+  --card-border: #222222;
+  --primary: #E50914;
+  --primary-foreground: #FFFFFF;
+  --input: #161616;
+  --ring: #E50914;
+  
+  --app-font-sans: 'Inter', sans-serif;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+}
+
+@keyframes pulse-bounce {
+  0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+  50% { transform: scale(1.12); box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+}
+.animate-pulse-bounce {
+  animation: pulse-bounce 4s ease-in-out infinite;
+}
+
+body {
+  @apply font-sans bg-[#0B0B0B] text-white antialiased overflow-x-hidden;
+  scroll-behavior: smooth;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}

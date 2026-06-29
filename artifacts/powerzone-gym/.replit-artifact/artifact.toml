@@ -1,0 +1,27 @@
+kind = "web"
+previewPath = "/"
+title = "POWERZONE GYM"
+version = "1.0.0"
+id = "artifacts/powerzone-gym"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 25558
+
+[services.development]
+run = "pnpm --filter @workspace/powerzone-gym run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/powerzone-gym", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/powerzone-gym/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "25558"
+BASE_PATH = "/"
