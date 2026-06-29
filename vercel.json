@@ -1,0 +1,6 @@
+{
+  "buildCommand": "pnpm --filter @workspace/powerzone-gym run build",
+  "outputDirectory": "artifacts/powerzone-gym/dist",
+  "installCommand": "pnpm install",
+  "framework": "vite"
+}
