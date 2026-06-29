@@ -14,7 +14,8 @@ const points = [
 
 export function WhySection() {
   return (
-    <section className="py-24 px-6 max-w-7xl mx-auto overflow-hidden">
+    <section id="why" className="py-24 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-6">
       <div className="grid md:grid-cols-2 gap-16 items-center">
         <div>
           <motion.h2 
@@ -48,6 +49,7 @@ export function WhySection() {
             ))}
           </ul>
         </div>
+      </div>
       </div>
     </section>
   );

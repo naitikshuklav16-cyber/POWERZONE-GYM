@@ -72,3 +72,98 @@ html, body {
   max-width: 100%;
   overflow-x: hidden;
 }
+
+/* ─── Section background images ────────────────────────────────────────────
+   Each section gets a gym photo layered behind a dark gradient so the
+   brand's black aesthetic is preserved while adding depth and texture.
+   The gradient opacity is tuned per-section so card content stays readable.
+──────────────────────────────────────────────────────────────────────────── */
+
+#about {
+  background-image:
+    linear-gradient(rgba(11,11,11,0.86), rgba(11,11,11,0.86)),
+    url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#services {
+  background-image:
+    linear-gradient(rgba(17,17,17,0.88), rgba(17,17,17,0.88)),
+    url('https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#why {
+  background-image:
+    linear-gradient(rgba(11,11,11,0.87), rgba(11,11,11,0.87)),
+    url('https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#transformations {
+  background-image:
+    linear-gradient(rgba(17,17,17,0.90), rgba(17,17,17,0.90)),
+    url('https://images.unsplash.com/photo-1549060279-7e168fcee0c2?w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#popular-times {
+  background-image:
+    linear-gradient(rgba(11,11,11,0.88), rgba(11,11,11,0.88)),
+    url('https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#membership {
+  background-image:
+    linear-gradient(rgba(11,11,11,0.88), rgba(11,11,11,0.88)),
+    url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#testimonials {
+  background-image:
+    linear-gradient(rgba(17,17,17,0.90), rgba(17,17,17,0.90)),
+    url('https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#cta {
+  background-image:
+    linear-gradient(rgba(11,11,11,0.84), rgba(11,11,11,0.84)),
+    url('https://images.unsplash.com/photo-1534368786749-b63e05c90863?w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#contact {
+  background-image:
+    linear-gradient(rgba(17,17,17,0.90), rgba(17,17,17,0.90)),
+    url('https://images.unsplash.com/photo-1570829460005-c840387bb1ca?w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Mobile: fixed attachment can stutter on iOS — switch to scroll */
+@media (max-width: 768px) {
+  #about, #services, #why, #transformations,
+  #popular-times, #membership, #testimonials, #cta, #contact {
+    background-attachment: scroll;
+  }
+}

@@ -1,6 +1,6 @@
 export function CtaBanner() {
   return (
-    <section className="relative py-24 bg-[#0B0B0B] border-y border-[#E50914]/20 overflow-hidden">
+    <section id="cta" className="relative py-24 bg-[#0B0B0B] border-y border-[#E50914]/20 overflow-hidden">
       <div className="absolute left-0 top-0 bottom-0 w-1 bg-[#E50914]"></div>
       <div className="absolute right-0 top-0 bottom-0 w-1 bg-[#E50914]"></div>
       

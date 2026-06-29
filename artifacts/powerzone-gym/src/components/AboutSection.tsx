@@ -19,7 +19,8 @@ export function AboutSection() {
   }, []);
 
   return (
-    <section id="about" className="py-24 px-6 max-w-7xl mx-auto">
+    <section id="about" className="py-24">
+      <div className="max-w-7xl mx-auto px-6">
       <div className="grid md:grid-cols-2 gap-16 items-center">
         <motion.div 
           initial={{ opacity: 0, x: -50 }}
@@ -81,6 +82,7 @@ export function AboutSection() {
             </motion.div>
           </AnimatePresence>
         </motion.div>
+      </div>
       </div>
     </section>
   );

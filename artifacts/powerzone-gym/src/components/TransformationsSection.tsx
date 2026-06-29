@@ -8,7 +8,7 @@ const results = [
 
 export function TransformationsSection() {
   return (
-    <section className="py-24 bg-[#111111]">
+    <section id="transformations" className="py-24 bg-[#111111]">
       <div className="max-w-7xl mx-auto px-6">
         <div className="mb-16">
           <div className="text-[#E50914] font-bold tracking-widest text-sm mb-4">REAL RESULTS</div>

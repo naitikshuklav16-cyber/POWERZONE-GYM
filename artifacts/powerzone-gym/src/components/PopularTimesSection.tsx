@@ -12,7 +12,8 @@ const data = [
 
 export function PopularTimesSection() {
   return (
-    <section className="py-24 px-6 max-w-4xl mx-auto text-center">
+    <section id="popular-times" className="py-24">
+      <div className="max-w-4xl mx-auto px-6 text-center">
       <div className="text-[#E50914] font-bold tracking-widest text-sm mb-4">REAL DATA — GOOGLE VERIFIED</div>
       <h2 className="font-heading font-black text-5xl md:text-6xl text-white uppercase mb-12">PEOPLE SPEND 1–3 HOURS HERE</h2>
       
@@ -53,6 +54,7 @@ export function PopularTimesSection() {
         </div>
       </div>
       <p className="text-white mt-6 text-lg font-medium">Live data verified: As busy as it gets during peak times.</p>
+      </div>
     </section>
   );
 }
