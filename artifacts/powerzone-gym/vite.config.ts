@@ -53,8 +53,8 @@ export default defineConfig({
   },
   root: path.resolve(import.meta.dirname),
   build: {
-    // Output to dist/ so vercel.json outputDirectory matches
-    outDir: path.resolve(import.meta.dirname, 'dist'),
+    // Relative path — works correctly on both Replit and Vercel
+    outDir: 'dist',
     emptyOutDir: true,
   },
   server: {
